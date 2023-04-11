@@ -1,0 +1,294 @@
+
+
+
+  
+.card {
+  padding: 10px;
+  margin: 10px;
+  display: inline-block; 
+  background-color: #537FE7;
+  border-radius: 5px;
+  font-size: 10px;
+  height: 200px;
+  width: 18%;
+  text-align: center;
+  font-family: "Font Name", sans-serif;
+ 
+  
+}
+
+
+.card img {
+  height: 100px;
+  width: 50%;
+  display: inline-block;
+  
+}
+
+
+#employee-cards1, #employee-cards2, #employee-cards3, #employee-cards4 {
+
+  width: 98%;
+  height: 265px;
+  border-color: #537FE7;
+  border-radius: 5px;
+  border: 3px solid #537FE7;
+  
+}
+
+#scdiv {
+
+
+  padding: 100px 0px 10px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  
+}
+ 
+form {
+  width: 60vw;
+  max-width: 690px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+  background-color: #537FE7;
+  border-radius: 10px;
+}
+
+#name {
+padding-top: 50px;
+}
+
+
+
+
+label {
+  display: block;
+  border-radius: 5px;
+  margin: 0px 0px 0px 47px;
+  font-size: 19px;
+  font-family: "Font Name", sans-serif;
+  color: #e8e8e8;
+}
+
+
+input,
+select {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  color: #424242;
+  width: 90%;
+  height: 4.5vh;
+  border-radius: 5px;
+  font-size: 15px;
+  min-height: 2em;
+  margin: 9px 20px 27px 0px;
+  font-family: "Font Name", sans-serif;
+}
+
+
+
+#Submit {
+  display: block;
+  width: 87%;
+  margin: 1em auto;
+  height: 2.7em;
+  font-size: 1.1rem;
+  background-color: rgb(255, 255, 255);
+  border-color:  rgb(255, 255, 255);
+  min-width: 300px;
+  font-family: "Font Name", sans-serif;
+  color: #537FE7;
+  border-radius: 0px;
+  font-size: 18px;
+}
+
+
+#legend {
+  padding: 10px 10px 0px 10px;
+  font-size: 15px;
+  font-family: "Font Name", sans-serif;
+  font-weight: 500;
+}
+
+body {
+  display: flex;
+  flex-direction:column;
+  }
+
+  
+  
+  header {
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(83, 127, 231);
+    height: 60px;
+    font-family: "Font Name", sans-serif;
+
+   
+  }
+  
+  
+   .header1 {
+    display: flex;
+    flex-direction:row;
+    
+  }
+  
+  img {
+    width: 35px;
+    height: 35px;
+    border-radius: 15%;
+    
+  }
+   .img1 {
+    
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   
+   padding: 13px 20px;
+  }
+  
+  h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0px 10px;
+  
+  
+  }
+  
+  
+  .d6 {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #33;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 550px;
+    gap: 90px
+   
+  }
+
+  
+  .d5 a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Font Name", sans-serif;
+  }
+
+  
+
+  .h22 {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(76, 76, 76);
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    padding-top: 90px;
+    font-family: "Font Name", sans-serif;
+
+
+  }
+
+
+
+  
+
+
+
+
+  .footer1 {
+  font-size: 10px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 10px;
+  padding-top: 100px;
+  font-family: "Font Name", sans-serif;
+  
+}
+
+  h4 {
+  color: rgb(129, 129, 129);
+  
+}
+
+.footer2 {
+  font-size: 10px;
+  font-weight: 500;
+  font-family: "Font Name", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 50px;
+
+
+}
+
+section ul li {
+
+  color: rgb(26, 26, 26);
+  
+
+}
+.footer3 {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Font Name", sans-serif;
+  padding-right: 50px;
+  
+}
+
+.ul1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+ padding-left: 80px;
+
+}
+.ul2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+.footer4 {
+  height: 30px;
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #537FE7;
+  font-family: "Font Name", sans-serif;
+
+
+
+}
+
