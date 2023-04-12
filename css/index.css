@@ -9,7 +9,7 @@
   background-color: #537FE7;
   border-radius: 5px;
   font-size: 10px;
-  height: 200px;
+  height: 220px;
   width: 18%;
   text-align: center;
   font-family: "Font Name", sans-serif;
@@ -29,7 +29,7 @@
 #employee-cards1, #employee-cards2, #employee-cards3, #employee-cards4 {
 
   width: 98%;
-  height: 265px;
+  height: 290px;
   border-color: #537FE7;
   border-radius: 5px;
   border: 3px solid #537FE7;
