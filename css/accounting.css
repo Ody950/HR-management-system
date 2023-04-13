@@ -23,12 +23,13 @@ th {
 
 
 td {
-  border: 2px solid black;
+  border: 2px solid rgb(255, 255, 255);
   padding: 8px;
   font-family: "Font Name", sans-serif;
   font-size: 15px;
-  color:rgb(83, 127, 231);
-  
+  color:#e8e8e8;
+  background-color: rgb(83, 127, 231);
+
 }
 
 
