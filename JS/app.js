@@ -1,5 +1,10 @@
+
+'use strict';
+
 const employeeForm = document.querySelector('#employee-form');
 employeeForm.addEventListener('submit', addNewEmployee)
+
+let allEmployee = [];
 
 function Employee(fullName, department, level,image) {
   this.fullName = fullName;
@@ -8,27 +13,39 @@ function Employee(fullName, department, level,image) {
   this.image = image;
   this.salary = this.salaryEmployee(); 
   this.EmployeeId = generateEmployeeId();
+  allEmployee.push(this);
 }
 
-Employee.prototype.render= function (){
+function render (){
 
-  const card = document.createElement('div');
-  card.classList.add('card'); 
 
+
+
+  //getEmployee()
+
+  
+  if (allEmployee == null) {
+      allEmployee = [];
+  }
+
+  for (let i =0; i < allEmployee.length; i++) {
+
+    const card = document.createElement('div');
+    card.classList.add('card'); 
 
     const img = document.createElement('img');
-    img.src = this.image;
+    img.src = allEmployee[i].image;
 
     const h2 = document.createElement('h2');
-    h2.textContent = `Name: ${this.fullName} -ID: ${generateEmployeeId()}`;
+    h2.textContent = `Name: ${allEmployee[i].fullName} -ID: ${generateEmployeeId()}`;
 
     const p1 = document.createElement('p');
-    p1.textContent = `Department: ${this.department}`;
+    p1.textContent = `Department: ${allEmployee[i].department}`;
 
     const p2 = document.createElement('p');
-    p2.textContent = `Level: ${this.level}`;
+    p2.textContent = `Level: ${allEmployee[i].level}`;
     const px3 = document.createElement('p');
-    px3.textContent = `Salary: ${this.salary}`;
+    px3.textContent = `Salary: ${allEmployee[i].salary}`;
 
   
     card.appendChild(img);
@@ -37,24 +54,26 @@ Employee.prototype.render= function (){
     card.appendChild(p2);
     card.appendChild(px3);
    
-
-    if (this.department == "Administration") {
+    
+    
+    if (allEmployee[i].department == "Administration") {
 
       employeeCards1.appendChild(card);
-    } else if (this.department == "Marketing") {
+    } else if (allEmployee[i].department == "Marketing") {
 
       employeeCards2.appendChild(card);
 
-    } else if (this.department == "Development") {
+    } else if (allEmployee[i].department == "Development") {
       employeeCards3.appendChild(card);
 
-    } else if (this.department == "Finance") {
+    } else if (allEmployee[i].department == "Finance") {
       employeeCards4.appendChild(card);
     }
   }
+  }
 
 function addNewEmployee(event){
-  event.preventDefault();
+  //event.preventDefault();
 
   let fullName =  event.target.fullName.value;
   const department = document.querySelector('#department').value;
@@ -64,8 +83,14 @@ function addNewEmployee(event){
 
   let newEmployee = new Employee(fullName,department,level,image);
   
-  newEmployee.render();
+
+  let jsonArr = JSON.stringify(allEmployee);
+  localStorage.setItem('allEmployee', jsonArr)
+
+
 };
+
+
 
 const employeeCards1 = document.querySelector('#employee-cards1');
 const employeeCards2 = document.querySelector('#employee-cards2');
@@ -117,6 +142,18 @@ Employee.prototype.salaryEmployee = function (){
 };
 
 
+
+
+function getEmployee() {
+
+  let jsonArr = localStorage.getItem('allEmployee');
+  let dataFromStorage = JSON.parse(jsonArr);
+  allEmployee = dataFromStorage;
+
+}
+
+getEmployee()
+render ()
 
 
 
